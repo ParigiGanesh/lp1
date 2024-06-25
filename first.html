@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Welcome Page</title>
+    <style>
+        /* CSS for animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        body {
+            background-color: blueviolet;
+            text-align: center;
+        }
+
+        h1 {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        h2 {
+            animation: slideIn 1.5s ease-out;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Launchpad</h1>
+    <h2>Today's First Class</h2>
+
+</body>
+</html>
+
